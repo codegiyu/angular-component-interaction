@@ -1,0 +1,23 @@
+<header>
+    <h1>Component Interaction</h1>
+</header>
+
+<main>
+    <div class="ui massive buttons">
+        <custom-button 
+            [name]="btn1Name"
+            [text]="btn1Text"
+            [id]="btn1Id"
+            [selectedBtn]="activeBtn" 
+            (wasClicked)="ifClicked($event)"
+        ></custom-button>
+        <div class="or"></div>
+        <custom-button 
+            [name]="btn2Name"
+            [text]="btn2Text"
+            [id]="btn2Id"
+            [selectedBtn]="activeBtn" 
+            (wasClicked)="ifClicked($event)"
+        ></custom-button>
+    </div>
+</main>
